@@ -1,0 +1,170 @@
+ /* 基本色 */
+:root {
+    --main-color : #1a4472;
+    --accent-color : #613827;
+    --sub-color : #d3bd89;
+    --dark-main-color : #333; /*rgba(51, 51, 51, 0)*/
+    --bright-main-color : #fff; /*rgba(255, 255, 255, 0)*/
+    --large-width:1000px;
+    --middle-width:800px;
+    --small-width:450px;
+  }
+  
+ 
+ /* ------------------------ */
+/* phoneのときの制御 */
+@media (max-width:599px) {
+
+    h1,
+    .conPC,
+    .header__boxA  {
+      display: none;
+    }
+  
+    h2 {
+      font-size: 18px;
+    }
+  
+    p {
+        font-size: 14px;
+    }
+  
+  } 
+    
+  /* phoneのときの制御 */
+  /* ------------------------ */
+  
+  /* ------------------------ */
+  /* タブレットのときの制御 */
+  @media (min-width:600px) and (max-width:799px) {
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    p {
+      font-size: 16px;
+    }
+  
+  
+  
+  }
+  /* タブレットのときの制御 */
+  /* ------------------------ */
+  
+  /* ------------------------ */
+  /* PCのときの制御 */
+  @media (min-width:800px)  {
+  
+    h1{
+      color: var(--bright-main-color);
+      font-size: 55px;
+      letter-spacing: 0.3rem;
+      font-weight: normal;
+      /* adobe fonts */
+      font-family: "ta-dansyaku", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      margin: 2rem 0;
+    }
+  
+    h2 {
+        font-size: 24px;
+    }
+  
+    p {
+        font-size: 18px;
+    }
+  
+    .header{
+      position: fixed;
+    }
+  
+    .header__menu{
+      display: none;
+      position: relative;
+    }
+  
+    .header__menu-bar{
+      display: block;
+      text-align: center;
+      position: absolute;
+      top:2rem;
+      left: 40.55rem;
+    }
+  
+    .header__menu-list{
+      background-color: transparent;
+      height: auto;
+  
+    }
+  
+    .conPC {
+      position: fixed;
+      z-index: -1;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      min-height: 450px;
+      background-position: center;
+      background-size: cover;
+      text-align: center;
+      overflow: hidden;
+      content:'';
+      
+    }
+  
+    .conPC,
+    .conPC img{
+        width: 100%;
+    }
+  
+    .phone {
+      position: absolute; 
+      top: 130px;
+      left: 235px;
+    }
+  
+    .conA{
+      background-color: transparent;
+    }
+  
+    .phone,
+    .conA,
+    .scrollbox{
+      max-width:var(--small-width);
+      height: 800px;
+    }
+  
+    .conB{
+      padding-bottom: 1600px;
+      margin-top: 160px;
+    }
+  
+    .conB__boxA{
+      margin-top: 80px;
+    }
+  
+    .conB__boxB{
+      margin-top: 160px;
+    }
+  
+    .conC{
+      background-size: 108%;
+    }
+
+  }
+  /* PCのときの制御 */
+  /* ------------------------ */
+  
+  /* ------------------------ */
+  /* ダークモードの対応 */
+  .div {
+    color: light-dark(#333, #fff);
+    background-color: light-dark(#fff, #333);
+  }
+  /* ダークモードの対応 */
+  /* ------------------------ */
+  
+  
+  
