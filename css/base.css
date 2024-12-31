@@ -28,6 +28,7 @@
     font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, 
     ".SFNSDisplay-Regular", "Hiragino Sans", "Hiragino Kaku Gothic ProN",
     Helvetica, "游ゴシック Medium", meiryo, sans-serif;
+    overflow-x: hidden;
   }
   
   h2 {
