@@ -119,24 +119,27 @@
 } 
 
 .header__menu {
-  padding-top: 1rem;
-  padding-right: 1rem;
   z-index: 300;
+
+  top:-40px;
+  left: -40px;
 }
 
 .header__menu-bar {
   display: none;
   z-index: 200;
+
+  top:-55px;
+  left: 0;
   
-  height:auto;
-  min-height: 450px;      
+  height:110vh;
+  min-height: 450px; 
+
 }
 
 .header__menu,
 .header__menu-bar {
   position:absolute;
-  top:-85px;
-  left: 0;
 }
 
 
@@ -149,7 +152,6 @@
 
   margin-left: auto;
   margin-right: 0;
-  padding:30px;
 }
 
 
@@ -166,7 +168,6 @@
   margin-top: 0;
   padding-right: 0;
   padding-left: 0;
-  padding-bottom: 40px;
   background-color: var(--main-color);
   
 
@@ -279,7 +280,7 @@
   .dli-chevron-round-right {
     display: inline-block;
     vertical-align: middle;
-    color: var(--dark-main-color);
+    color: var(--sub-color);
     line-height: 1;
     position: relative;
     width: 1em;
@@ -311,7 +312,7 @@
   .dli-chevron-round-left {
     display: inline-block;
     vertical-align: middle;
-    color: #333;
+    color: var(--sub-color);
     line-height: 1;
     position: relative;
     width: 1em;

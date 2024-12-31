@@ -80,17 +80,10 @@
       position: fixed;
     }
   
-    .header__menu{
+    .header__menu,
+    .header__menu-bar{
       display: none;
       position: relative;
-    }
-  
-    .header__menu-bar{
-      display: block;
-      text-align: center;
-      position: absolute;
-      top:2rem;
-      left: 40rem;
     }
   
     .header__menu-list{
@@ -118,7 +111,18 @@
     .conPC img{
         width: 100%;
     }
-  
+    
+    .conPC img{
+      position: relative;
+    }
+
+    .header__pc__menu-bar{
+      position: absolute;
+      top:7rem;
+      left:60%;
+    }
+
+
     .phone {
       position: absolute; 
       top: 130px;
