@@ -182,6 +182,9 @@
     letter-spacing: 0.3rem;
 }
 
+.phone{
+  overflow: hidden;
+}
 
   
 /*-----header-----*/
