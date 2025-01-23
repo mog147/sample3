@@ -15,6 +15,11 @@
 /* phoneのときの制御 */
 @media (max-width:599px) {
 
+  .phone{
+    overflow: hidden;
+  }
+  
+
     h1,
     .conPC,
     .header__boxA  {
