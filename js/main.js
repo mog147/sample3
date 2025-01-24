@@ -9,13 +9,13 @@ $(function(){
             if ($('.header__menu-bar').css('display') == "none") {
 
                 // 非表示の場合の処理
-                $("#target").addClass("fixed");      //id[target]を固定
-                $('.header__menu-bar').slideToggle();//menu-barを開く
+                $(".header__menu-bar").addClass("fixed");      //id[target]を固定
+                $('.header__menu-bar').show();//menu-barを開く
 
             } else {
 
                 // 表示の場合の処理
-                $("#target").removeClass("fixed");//id[target]を固定解除
+                $(".header__menu-bar").removeClass("fixed");//id[target]を固定解除
                 $('.header__menu-bar').hide();    //menu-barを閉じる
         
             }
